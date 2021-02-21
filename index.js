@@ -13,7 +13,7 @@ app.use(router);
 
 let PORT = process.env.PORT || 8000;
 
-let server = app.listen(PORT, "localhost", () =>
+let server = app.listen(PORT, process.env.HOSTNAME, () =>
   console.log("server on port ", PORT)
 );
 
